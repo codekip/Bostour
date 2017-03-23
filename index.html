@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BOS Tour</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="bos.css">
+</head>
+<body>
+  <div class="container" id="bostour">
+    <div class="row">
+      <h1>Behaviour Observation &amp; Feedback</h1>
+
+      <div class="panel panel-primary">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-md-6">Behaviours</th>
+              <th class="col-md-2">Safe Observations</th>
+              <th class="col-md-2">Unsafe Observations</th>
+              <th class="col-md-2">Unsafe Confrontations</th>
+            </tr>
+          </thead>
+          <tbody is="bos-behaviour-set" v-for="behaviourset in behavioursets" v-bind:title="behaviourset.title" v-bind:behaviours=behaviourset.behaviours></tr>
+        </table>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script type="text/javascript" src="bos.js"></script>
+  </div>
+</body>
+</html>
