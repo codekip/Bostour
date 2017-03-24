@@ -1,3 +1,39 @@
+/* Nick added this */
+team = new Vue({
+  el: '#team',
+  data:{
+    teams: [
+      'Days',
+      'Team 1',
+      'Team 2',
+      'Team 3',
+    ],
+  }
+});
+
+namelist = new Vue({
+  el: '#namelist',
+  data:{
+    thenames: [
+      'Arnold, Paul',
+      'Black, Paul',
+      'Boughey, Ben',
+      'Bricklebank, Neil',
+    ],
+  }
+});
+
+submit = new Vue({
+  el:'#submitbutton',
+  methods:{
+    submit: function(event){
+      alert('Form submitted successfully');
+    }
+  }
+});
+
+/* End of Nick added this */
+
 boscounter = Vue.component('bos-counter', {
   template: '<td class="count" v-on:click="increment()">{{ count }}</td>',
   data: function() {

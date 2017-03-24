@@ -1,3 +1,41 @@
 .table td.count {
   text-align: center;
 }
+
+#team, #namelist{
+  float: left;
+  padding: 5px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+#teamheading{
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color:
+}
+#teamdropdown{
+  float: left;
+  margin-top: 20px;
+}
+
+.names{
+  font-size: 18px;
+  float: left;
+  margin-left: 50px;
+}
+
+
+.image{
+margin-left:400px;
+margin-right:auto;
+ display:block;
+
+
+}
+
+#confirm{
+  text-align: center;
+}
