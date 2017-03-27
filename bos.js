@@ -1,4 +1,3 @@
-/* Nick added this */
 team = new Vue({
   el: '#team',
   data:{
@@ -22,18 +21,6 @@ namelist = new Vue({
     ],
   }
 });
-
-submit = new Vue({
-  el:'#submitbutton',
-  methods:{
-    submit: function(event){
-      alert('Form submitted successfully');
-      window.location.reload(true);
-    }
-  }
-});
-
-/* End of Nick added this */
 
 boscounter = Vue.component('bos-counter', {
   template: '<td class="count" v-on:click="increment()">{{ count }}</td>',
@@ -70,6 +57,16 @@ bosbehaviourset = Vue.component('bos-behaviour-set', {
                </tr>\
                <tr is="bos-behaviour" v-for="behaviour in behaviours" v-bind:description="behaviour.description"></tr>\
              </tbody>'
+});
+
+submit = Vue.component('bos-submit-button', {
+  template: '<a class="btn btn-primary btn-lg" v-on:click="submit()">Submit</a>',
+  methods:{
+    submit: function() {
+      alert('Bos Submitted!');
+      window.location.reload();
+    }
+  }
 });
 
 bostour = new Vue({
