@@ -28,6 +28,7 @@ submit = new Vue({
   methods:{
     submit: function(event){
       alert('Form submitted successfully');
+      window.location.reload(true);
     }
   }
 });
